@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Web Technology</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the World of Advanced Web Technology</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Advanced Web Technology</h2>
+      <p>
+        Advanced web technology delves into innovations in web development, including modern frameworks, 
+        Progressive Web Apps (PWAs), and artificial intelligence integration.
+      </p>
+    </section>
+
+    <section>
+      <h2>Popular Tools and Technologies</h2>
+      <ul>
+        <li>Frameworks: React, Angular, Vue.js</li>
+        <li>Backend: Node.js, Django, Spring Boot</li>
+        <li>Hosting: GitHub Pages, Vercel, Netlify</li>
+      </ul>
+      <p>
+        Explore more resources on 
+        <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Inspiring Image</h2>
+      <p>An image representing the interconnectedness of web technologies:</p>
+      <img src="OIP.jpg" alt="Illustration of web technologies">
+    </section>
+
+    <!-- New interactive section -->
+    <section>
+      <h2>Interactive Feature</h2>
+      <p id="dynamic-text">This is the original content. Click the button to change this text dynamically.</p>
+      <button onclick="changeContent()">Click Me!</button>
+      <div id="new-content"></div>
+    </section>
+  </main>
+
+
+  <script>
+    function changeContent() {
+      // Change the text of the paragraph with id "dynamic-text"
+      const dynamicText = document.getElementById("dynamic-text");
+      dynamicText.innerText = "You've clicked the button, and the content has been updated!";
+
+      // Add additional dynamic content to the new div
+      const newContent = document.getElementById("new-content");
+      newContent.innerHTML = "<strong>Thank you for interacting with us!</strong><p>Explore more about advanced web technologies and how they shape the future of the internet.</p>";
+    }
+  </script>
+</body>
+</html>
